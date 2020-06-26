@@ -6,7 +6,7 @@ This project has two parts that demonstrate the importance and value of data vis
 
 - In the first part (1/2) I used Python visualization libraries to systematically wrangle and explore the origin `2017-fordgobike-tripdata` datafile, starting from plots of single variables and building up to plots of multiple variables.
 
-- In this second part of the project (2/2), I present with visualizations the interesting relationships, patterns and insights that I discovered in the (in part 1) selected and cleaned dataset.
+- In this second part of the project (2/2), I present slides with visualizations the interesting relationships, patterns and insights that I discovered in the (in part 1) selected and cleaned dataset.
 
 
 
@@ -21,7 +21,7 @@ The dataset used for this exploratory analysis consists of Bay Wheels's trip dat
 The Dataset consists of anonymized information regarding 519.700 bike trips, including its timing and geolocation of the start and end of each trip. 
 
 
-### Wrangle/Clean to create cleaned datafile `fordgobike-tridata_clean.csv` (part 1)
+## 3. Wrangle/Clean to create cleaned datafile `fordgobike-tridata_clean.csv` (part 1)
 
 For safety and to enable bi- and multivariate exploration I removed the outliers with values beyond 5 standard deviations based on calculated Z-score. 
 As a result all observations with bike trip duration_min > 44 minutes were removed. 
@@ -39,14 +39,12 @@ In the data exploration we used mainly the following features in the cleaned dat
 
 
 
-## Summary of Findings of Data Exploration (part 1)
-
-The Data Exploration has been done in notebook `exploration_GoBikes_by_DirkKadijk1.0.ipynb`.
+## 4. Summary of Findings of Data Exploration (part 1)
 
 In the exploration I found regarding the main variables of interest:
 - Definitely each of these graphs reinforces the general hypothesis that customers are more like recreational users and subcribers tend to be people that use them to go to work or school:
   - Subscribers mainly hire a bike during weekdays (more than double the level of weekdays), and Customers hire especially in the weekend.
-  - The bike trip duration of Customers is about the double of Subscribers (20 vs 10 minutes).
+  - The bike trip duration of Customers is about the double of Subscribers (18 vs 10 minutes).
   - A significant higher trip duration during weekend days by Customers. The duration is about 18.5 minutes during weekend days, which is about 10% higher than the highest score during a weekday.
 - But the last (multivariate explorations) help us get even more detail about the patterns of use on hourly level over the whole course of a week, and the differences between Customers and Subcribers.
   - For both types of users the distribution of rides during the weekdays depends a lot on the hour of the day and day of the week. 
@@ -56,16 +54,20 @@ Outside of the main variables of interest, I found:
 - Also location of end destination station matters as variable for predicting bike usage; the destination `The Embarcadero at Sansome St` has the highest trip duration (about 30-40% higher) compared with other destinations. This has probably a relation with that the station is located at a great tourist/recreation area which ... can make you understand why the bike trips by Customers take long... :)
 
 
+>Note: The Data Exploration has been done in notebook `exploration_GoBikes_by_DirkKadijk1.0.ipynb`.
 
-## Key Insights for Presentation slides (part 2)
+
+## 5. Key Insights for Presentation slides (part 2)
 
 In the presentation I focus on the relationship between bikes ride count and trip duration and user_types (Customers, Subscribers).
 
 I start with a barchart visual with the distribution of trip count between the 2 user_types. 
-The distribution (histograms) of bike trips per hour-of-day and day-of-week for each user_type.
 
-Then I present a heatmap of the count of bike trips by both hour-of-day and day-of-week for each user_type (visuals side-by-side). This gives a clear view of bike usage over the course of a weekprofile (heatlevel for each of the 7x24 hours) and gives much insigth about the difference in bike usage between the 2 user_types.
+Followed by the distribution of biketrip duration for each user_type (2 histograms side-by-side).
+
+Then I present a heatmap of the count of bike trips by both hour-of-day and day-of-week for each user_type (visuals side-by-side). This gives a clear view of bike usage over the course of a weekprofile (heatlevel for each of the 7x24 hours) and gives much insight about the difference in bike usage profile between the 2 user_types.
 
 Finally I present a clustered barplot of trip duration by both start_day_of-week and end_station_name (limited to the top 10 end stations). This illustrates that also the location of the end destination station matters as variable for explaining bike usage and trip duration.
 
 
+>Note: click on the file 2_slide_deck_GoBikes_by_DirkKadijk1.0.slides.html to start the interactive prosentation which is in a Jupyter notebook is a HTML slide format (based on reveal.js library). Click of navigate to left/right/up/down to see all (optional) slides and press ESC for overview of slides.
