@@ -70,4 +70,4 @@ Then I present a heatmap of the count of bike trips by both hour-of-day and day-
 Finally I present a clustered barplot of trip duration by both start_day_of-week and end_station_name (limited to the top 10 end stations). This illustrates that also the location of the end destination station matters as variable for explaining bike usage and trip duration.
 
 
->Note: click on the file `2_slide_deck_GoBikes_by_DirkKadijk1.0.slides.html` to start the interactive prosentation which is in a Jupyter notebook in a HTML slide format (based on reveal.js library). Click of navigate to left/right/up/down to see all (optional) slides and press ESC for overview of slides.
+>Note: Click on the file `2_slide_deck_GoBikes_by_DirkKadijk1.0.slides.html` to start the interactive presentation which is a Jupyter notebook in a HTML slide format (based on reveal.js library). Click of navigate to left/right/up/down to see all (optional) slides and press ESC for overview of slides.
