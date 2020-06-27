@@ -1,4 +1,4 @@
-# Ford-GoBike-Data-Exploration-and-Communication-of-insights
+# Ford-GoBike-Data-Exploration-and-Visualization-of-insights
 
 ## 1. Investigation Overview
 
